@@ -1,0 +1,38 @@
+{
+  "format": 1,
+  "title": {
+    "en": "cusclo Harness plugins",
+    "zh": "cusclo 的 Harness 插件"
+  },
+  "plugins": [
+    {
+      "name": "dsh-harness-collab",
+      "title": {
+        "en": "Collaboration Leader",
+        "zh": "多 Agent 协作"
+      },
+      "description": {
+        "en": "DeepSeek leads Codex implementation and Antigravity CLI review.",
+        "zh": "DeepSeek 负责派工，Codex 实现，Antigravity CLI 审查。"
+      },
+      "author": "cusclo",
+      "repository": {
+        "url": "https://github.com/cusclo/dsh-harness-collab-dist"
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794195123,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/cusclo/dsh-harness-collab-dist",
+            "commit": "9d7ad5e1e5335377136842a390857a0c5be0ecad"
+          },
+          "engines": {
+            "dsh": "0.2.2-rc.1"
+          }
+        }
+      ]
+    }
+  ]
+}
