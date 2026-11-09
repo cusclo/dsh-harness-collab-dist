@@ -18,11 +18,6 @@
       "patch": "./cordis.patch.yml"
     }
   },
-  "peerDependencies": {
-    "@deepseek-ai/dsh": "0.2.2-rc.1",
-    "@deepseek-ai/dsh-agent-preset": "0.2.2-rc.1",
-    "@deepseek-ai/dsh-tool-subagent": "0.2.2-rc.1"
-  },
   "description": "DeepSeek Harness collaboration leader with Codex implementation and Antigravity CLI review",
   "license": "MIT",
   "author": "cusclo",
