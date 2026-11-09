@@ -1,0 +1,37 @@
+{
+  "name": "dsh-harness-collab",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": "./src/leader.mjs",
+  "files": [
+    "src",
+    "cordis.patch.yml",
+    "examples",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": "0.2.2-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-agent-preset": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-tool-subagent": "0.2.2-rc.1"
+  },
+  "description": "DeepSeek Harness collaboration leader with Codex implementation and Antigravity CLI review",
+  "license": "MIT",
+  "author": "cusclo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cusclo/dsh-harness-collab-dist.git"
+  },
+  "homepage": "https://github.com/cusclo/dsh-harness-collab-dist",
+  "dependencies": {
+    "@deepseek-ai/dsh-subagent-codex": "0.2.2-rc.1"
+  }
+}

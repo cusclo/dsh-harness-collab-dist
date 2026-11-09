@@ -1,0 +1,21 @@
+- insert:
+    - id: collab-codex
+      name: '@deepseek-ai/dsh-subagent-codex'
+      config:
+        providerName: collab-codex
+        permissionMode: approve-for-me
+    - id: preset-collab-leader
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: collab-leader
+        name: Collaboration Leader
+        description: Delegate implementation and review, verify the diff, and report test evidence.
+        plugins:
+          - id: collab-leader-instructions
+            name: dsh-harness-collab
+          - id: collab-tool-codex
+            name: '@deepseek-ai/dsh-tool-subagent'
+            config:
+              provider: collab-codex
+              toolName: subagent_codex
+              maxDepth: provider-managed
